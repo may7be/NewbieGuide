@@ -44,7 +44,7 @@ public class ViewUtils {
             }
             tmp = (View) tmp.getParent();
             if (tmp == null) {
-                throw new IllegalArgumentException("the view is not showing in the window!");
+                break;
             }
             //fix ScrollView中无法获取正确的位置
             if (tmp.getParent() instanceof ScrollView) {
